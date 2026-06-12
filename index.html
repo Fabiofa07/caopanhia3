@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cãopanhia do Amor - Pet Shop, Estética e Bem-Estar</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header style="position: relative; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <div class="header-container" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; max-width: 1200px; margin: 0 auto;">
+        
+        <div class="logo-box">
+            <a href="#" class="logo-link">
+                <img src="logo.jfif" alt="Logo">
+                <span class="logo-texto">Cãopanhia <span class="destaque-laranja">do Amor</span></span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+    <section class="hero" id="inicio">
+        <div class="carousel">
+            <div class="carousel-slide active" style="background-image: url('pet1.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('pet2.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('pet3.jpg');"></div>
+            <div class="carousel-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <h1>Transformando o cuidado animal em uma experiência cheia de <span>carinho, segurança e amor</span>.</h1>
+            <p>O melhor em higiene, estética, saúde veterinária e hospedagem para o seu melhor amigo aqui em Praia Grande.</p>
+            
+            <div class="cta-buttons">
+                <a href="https://wa.me/5513977698130" class="btn-whatsapp" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.588-1.379-.653-.185-.066-.32-.099-.455.101-.134.2-.522.653-.64.784-.117.13-.235.147-.437.046-2.074-1.039-3.25-1.933-4.2-3.566-.24-.414.24-.385.689-1.282.075-.15.038-.282-.019-.383-.058-.101-.455-1.096-.624-1.503-.164-.397-.33-.343-.45-.349-.116-.006-.25-.006-.384-.006-.134 0-.353.05-.537.25-.184.2-.703.688-.703 1.683 0 1.004.73 1.976.832 2.11.101.135 1.436 2.193 3.481 3.076.487.21 1.012.337 1.348.443.49.155.936.133 1.288.08.393-.06 1.194-.487 1.36-.957.166-.467.166-.867.117-.957-.048-.09-.185-.142-.388-.243z"/>
+                    </svg>
+                    Agendar pelo WhatsApp
+                </a>
+                <a href="mailto:contato@caopanhiadoamor.com.br?subject=Contato%20via%20Site" class="btn-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                    Enviar um E-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Troca de imagem a cada 4 segundos (4000 milissegundos)
+        setInterval(nextSlide, 4000);
+    </script>
+
+    <section class="diferencial" id="sobre">
+        <h2 class="section-title">Nosso Grande Diferencial</h2>
+        <div class="diferencial-box">
+            <h3>❤️ Creche Afetiva & Acompanhamento Personalizado</h3>
+            <p>Sabemos o quanto a saudade aperta! Por isso, na nossa creche, além de atividades de socialização e passeios, nós enviamos <strong>fotos e atualizações em tempo real dos pets para os donos</strong> durante todo o período de atendimento.</p>
+        </div>
+    </section>
+
+    <section class="servicos-preview" id="servicos">
+        <h2 class="section-title" style="text-align: center;">Tudo o que seu Pet precisa</h2>
+        
+        <div class="grid-servicos">
+            <div class="card-servico">
+                <h3>Higiene e Estética</h3>
+                <ul>
+                    <li>Banhos regulares e relaxantes</li>
+                    <li>Tosa higiênica, na máquina e tesoura</li>
+                    <li>Hidratação de pelos e escovação dental</li>
+                    <li>Corte de unhas e limpeza de ouvidos</li>
+                </ul>
+            </div>
+
+            <div class="card-servico destaque">
+                <h3>Hospedagem e Lazer</h3>
+                <ul>
+                    <li>Hotel para pets completo</li>
+                    <li>Creche / Day Care afetuoso</li>
+                    <li>Área de socialização e passeios</li>
+                    <li>Táxi Pet para buscar e levar</li>
+                </ul>
+            </div>
+
+            <div class="card-servico">
+                <h3>Saúde e Cuidados</h3>
+                <ul>
+                    <li>Consultas veterinárias e exames</li>
+                    <li>Vacinação e vermifugação</li>
+                    <li>Aplicação de medicamentos</li>
+                    <li>Microchipagem e controle de pragas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-loc" id="contato">
+        <div class="contato-container">
+            
+            <div class="info-col">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Fale Conosco</h2>
+                
+                <div class="info-item">
+                    <h4>📍 Endereço</h4>
+                    <p>Avenida Presidente Kennedy, 3020<br>Vila Tupi - Praia Grande/SP<br>CEP: 11706-140</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 4px; color: #25D366;">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.588-1.379-.653-.185-.066-.32-.099-.455.101-.134.2-.522.653-.64.784-.117.13-.235.147-.437.046-2.074-1.039-3.25-1.933-4.2-3.566-.24-.414.24-.385.689-1.282.075-.15.038-.282-.019-.383-.058-.101-.455-1.096-.624-1.503-.164-.397-.33-.343-.45-.349-.116-.006-.25-.006-.384-.006-.134 0-.353.05-.537.25-.184.2-.703.688-.703 1.683 0 1.004.73 1.976.832 2.11.101.135 1.436 2.193 3.481 3.076.487.21 1.012.337 1.348.443.49.155.936.133 1.288.08.393-.06 1.194-.487 1.36-.957.166-.467.166-.867.117-.957-.048-.09-.185-.142-.388-.243z"/>
+                        </svg>
+                        Telefone & WhatsApp
+                    </h4>
+                    <p><a href="https://wa.me/5513977698130" target="_blank" class="link-direto">(13) 97769-8130</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 4px;">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        E-mail
+                    </h4>
+                    <p><a href="mailto:contato@caopanhiadoamor.com.br" class="link-direto">contato@caopanhiadoamor.com.br</a></p>
+                </div>
+            </div>
+
+            <div class="mapa-col">
+                <div class="map-placeholder">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.108422204128!2d-46.3986872!3d-24.011384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1e3bc24bb64b%3A0xc6651d6dbca6eb68!2sAv.%20Pres.%20Kennedy%2C%203020%20-%20Vila%20Tupi%2C%20Praia%20Grande%20-%20SP%2C%2011706-140!5e0!3m2!1spt-BR!2sbr!4v1716000000000!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        style="width: 100%; height: 100%; border: 0;">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<section class="depoimentos">
+    <h2>O que os papais de pet dizem</h2>
+    
+    <div class="depoimentos-grid">
+        <div class="card-depoimento">
+            <div class="pet-info">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=100&auto=format&fit=crop" alt="Thor" class="foto-pet">
+                <div>
+                    <h3>Mariana Silva</h3>
+                    <p class="nome-pet">Mamãe do Thor (Golden)</p>
+                </div>
+            </div>
+            <p class="texto-depoimento">"O Thor ama a creche! Ele volta para casa super feliz, cansado de tanto brincar e sempre muito bem cuidado. A equipe tem um carinho que faz toda a diferença."</p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+
+        <div class="card-depoimento">
+            <div class="pet-info">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=100&auto=format&fit=crop" alt="Luna" class="foto-pet">
+                <div>
+                    <h3>Carlos Eduardo</h3>
+                    <p class="nome-pet">Papai da Luna (Shih Tzu)</p>
+                </div>
+            </div>
+            <p class="texto-depoimento">"O serviço de banho e tosa é impecável. A Luna é super medrosa com o soprador, mas os profissionais têm uma paciência incrível com ela. Recomendo de olhos fechados!"</p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+
+        <div class="card-depoimento">
+            <div class="pet-info">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=100&auto=format&fit=crop" alt="Pipoca" class="foto-pet">
+                <div>
+                    <h3>Juliana Ribeiro</h3>
+                    <p class="nome-pet">Mamãe do Pipoca (Poodle)</p>
+                </div>
+            </div>
+            <p class="texto-depoimento">"O ambiente é extremamente limpo e seguro. Deixei o Pipoca no hotelzinho durante o final de semana e recebi fotos dele o tempo todo. Nota dez!"</p>
+            <div class="estrelas">★★★★★</div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="redes-sociais">
+    <a href="https://wa.me/seu-numero" target="_blank" class="icone-social whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://instagram.com/seu-perfil" target="_blank" class="icone-social instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://facebook.com/seu-perfil" target="_blank" class="icone-social facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+</div>
+        <p>© 2026 Cãopanhia do Amor. Todos os direitos reservados.</p>
+        <p>Proporcionar carinho, cuidado e qualidade de vida aos pets.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
